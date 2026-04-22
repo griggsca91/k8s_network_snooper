@@ -1,0 +1,17 @@
+[package]
+name = "the_snoop-ebpf"
+version = "0.1.0"
+edition.workspace = true
+
+[dependencies]
+the_snoop-common = { path = "../the_snoop-common" }
+
+aya-ebpf = { workspace = true }
+aya-log-ebpf = { workspace = true }
+
+[build-dependencies]
+which = { workspace = true }
+
+[[bin]]
+name = "the_snoop"
+path = "src/main.rs"
