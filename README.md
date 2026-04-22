@@ -13,5 +13,6 @@ Ideally it should be a simple operator that gets installed and starts collecting
 
 <https://sdk.operatorframework.io/docs/building-operators/golang/tutorial/>
 <https://book.kubebuilder.io/cronjob-tutorial/empty-main.html>
+<https://aya-rs.dev/book/>
 
 # Notes

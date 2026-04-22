@@ -50,6 +50,11 @@ func (r *MemcachedReconciler) Reconcile(ctx context.Context, req ctrl.Request) (
 	_ = logf.FromContext(ctx)
 
 	// TODO(user): your logic here
+	memcached := &cachev1alpha1.Memcached{}
+	err := r.Get(ctx, req.NamespacedName, memcached)
+	if err != nil {
+		return ctrl.Result{}, err
+	}
 
 	return ctrl.Result{}, nil
 }
